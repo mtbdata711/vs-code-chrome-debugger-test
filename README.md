@@ -1,56 +1,15 @@
-# Nano React App Default Javascript Template
+# VS Code Chrome Debugger (React) Test
 
-The default template project for [nano-react-app](https://github.com/nano-react-app/nano-react-app).
+To setup:
 
-- `npm start` — This will spawn a development server with a default port of `3000`.
-- `npm run build` — This will output a production build in the `dist` directory.
+`npm install && npm run start`
 
-## Custom port
+Update App.jsx with some code to debug & add inline breakpoint
 
-You can use the `-p` flag to specify a port for development. To do this, you can either run `npm start` with an additional flag:
+Open Run & Debug tab in VS Code
 
-```
-npm start -- --port 1234
-```
+Press F5 or click the play button to start a debug session
 
-Or edit the `start` script directly:
-
-```
-vite --port 1234
-```
-
-## Adding styles
-
-You can use CSS files with simple ES2015 `import` statements anywhere in your Javascript:
-
-```js
-import "./index.css";
-```
-
-## Babel transforms
-
-The Babel preset [babel-preset-nano-react-app](https://github.com/nano-react-app/babel-preset-nano-react-app) is used to support the same transforms that Create React App supports.
-
-The Babel configuration lives inside `package.json` and will override an external `.babelrc` file, so if you want to use `.babelrc` remember to delete the `babel` property inside `package.json`.
+Debug!
 
 
-## Deploy to GitHub Pages
-
-You can also deploy your project using GitHub pages.
-First install the `gh-pages` [package](https://github.com/tschaub/gh-pages):
-
-`npm i -D gh-pages`
-
-Use the following scripts for deployment:
-
-```
-"scripts": {
-  "start": "vite",
-  "build": "vite build",
-  "predeploy": "rm -rf dist && vite build",
-  "deploy": "gh-pages -d dist"
-},
-```
-
-Then follow the normal procedure in GitHub Pages and select the `gh-pages` branch.
-# vs-code-chrome-debugger-test
